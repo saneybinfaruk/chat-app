@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/index",
+    "build": "tsx -p .",
+    "dev": "tsc-watch --onSuccess \"node dist/index.js\" "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "private": true,
+  "devDependencies": {
+    "tsc-watch": "^6.2.0",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "@socket.io/admin-ui": "^0.5.1",
+    "@socket.io/redis-streams-adapter": "^0.2.2",
+    "ioredis": "^5.4.1",
+    "kafkajs": "^2.2.4",
+    "socket.io": "^4.8.0"
+  }
+}
